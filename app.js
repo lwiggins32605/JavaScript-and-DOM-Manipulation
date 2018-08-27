@@ -1,4 +1,4 @@
-// from data.js
+// Data from data.js
 var alienData = data;
 
 var tbody = d3.select("tbody");
@@ -7,7 +7,7 @@ var table = d3.select("table");
 
 table.attr("class", "table table-striped");
 
-// Select Submit button with id = "filter-btn"
+// Select Submit button with id = "filter-btn" changed to #submit
 var submit = d3.select("#submit");
 
 submit.on("click", function() {
@@ -20,13 +20,12 @@ submit.on("click", function() {
     
     // Get the property of the input element
     var inputValue = inputElement.property("value");
-    console.log(inputValue);
+    //console.log(inputValue);
     //console.log(alienData);
-    console.log(alienData);
 
     // Filter
     var filteredData = alienData.filter(siting => siting.datetime === inputValue);
-    console.log(filteredData)
+    //console.log(filteredData)
 
     filteredData.forEach(x => {
          var row = tbody.append("tr");
@@ -44,6 +43,5 @@ submit.on("click", function() {
 });
 
 
-// "All of life is calculus: every thing, every movement, everythought" ~ Verna Orsatti
-
+// "All of life is calculus: every thing, every movement, every thought" ~ Verna Orsatti
 
