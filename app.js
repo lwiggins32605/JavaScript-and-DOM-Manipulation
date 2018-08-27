@@ -30,7 +30,7 @@ submit.on("click", function() {
     var countryinputValue = countryinputElement.property("value");
     var shapeinputValue = shapeinputElement.property("value");
 
-//var myselect = d3.select('#myselect select');
+    // Filter Data or Default is all data
     var tableData = alienData
 
     if (dateinputValue.length > 0) {
@@ -49,7 +49,6 @@ submit.on("click", function() {
         var tableData = tableData.filter(siting => siting.shape === shapeinputValue);   
     }
 
-    // Filter:  Default if no valid filtering is entered to display all data
     var filteredData = tableData
     filteredData.forEach(x => {
          var row = tbody.append("tr");
