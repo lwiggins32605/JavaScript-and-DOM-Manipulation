@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
-
 </head>
 
 <body>
@@ -31,7 +30,7 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading"> Filter Search on 1 or More Options  None Returns All  Refresh to Clear</div>
               <div class="panel-body">
                 <form id="myForm">
                   <div class="form-group">                                                         
@@ -58,7 +57,7 @@
                       </li>          
                     </ul>
                   </div>
-                  <button id="submit" type="submit" class="btn btn-default">Click to filter</button>                                              
+                  <button id="submit" type="submit" class="btn btn-default">Click to Filter</button>                                              
                 </form>
               </div>
             </div>
@@ -95,43 +94,3 @@
 
 </html>
 
-
-
-
-
-<!-- <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Weekday</th>
-        <th>Date</th>
-        <th>High</th>
-        <th>Low</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</body>
-<script src="static/js/data.js"></script> -->
-<!-- <script src="static/js/index.js"></script> -->
-
- <!-- <script>
-
-  // need to add 1 tr for each observation in data
-  // for each tr, there's a td for each column in the data
-  // we have 4 columns
-
-  var table_body = d3.select("tbody");
-  table_body.attr("class", "table table-striped")
-  data.forEach(x => {
-    let tb = table_body.append('tr')
-    // console.log(x)
-    Object.entries(x).forEach(([key, value]) => {
-      // console.log(key, value)
-      tb.append('td').text(value)
-
-    })
-  })
-
-
-</script> -->
