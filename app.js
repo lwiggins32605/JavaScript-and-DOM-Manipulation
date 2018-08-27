@@ -17,11 +17,11 @@ submit.on("click", function() {
     d3.event.preventDefault();
 
     // Select the input element and get the raw HTML node
-    var dateinputElement = d3.select("#datetime")
-    var cityinputElement = d3.select("#city")
-    var stateinputElement = d3.select("#state")
-    var countryinputElement = d3.select("#country")
-    var shapeinputElement = d3.select("#shape")
+    var dateinputElement = d3.select("#datetime");
+    var cityinputElement = d3.select("#city");
+    var stateinputElement = d3.select("#state");
+    var countryinputElement = d3.select("#country");
+    var shapeinputElement = d3.select("#shape");
     
     // Get the property of the input element
     var dateinputValue = dateinputElement.property("value");
@@ -32,7 +32,7 @@ submit.on("click", function() {
 
     // Filter Data with ONE OR MORE options selected at a time as desired
     // or none as Default for all data
-    var tableData = alienData
+    var tableData = alienData;
 
     if (dateinputValue.length > 0) {
     var tableData = tableData.filter(siting => siting.datetime === dateinputValue);
